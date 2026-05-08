@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UdangKu - Sistem Monitoring Tambak Udang Cerdas</title>
+    <meta name="description"
+        content="UdangKu - Sistem monitoring tambak udang berbasis IoT dan AI. Solusi cerdas untuk budidaya udang Indonesia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.png" alt="UdangKu Logo" class="logo-img">
+                <span class="logo-text">UdangKu</span>
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero" class="nav-link">Beranda</a></li>
+                    <li><a href="#masalah" class="nav-link">Masalah</a></li>
+                    <li><a href="#solusi" class="nav-link">Solusi</a></li>
+                    <li><a href="#cara-kerja" class="nav-link">Cara Kerja</a></li>
+                    <li><a href="#features" class="nav-link">Fitur</a></li>
+                    <li><a href="#tech" class="nav-link">Teknologi</a></li>
+                    <li><a href="#team" class="nav-link">Tim</a></li>
+                </ul>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><img src="logo.png" alt="" class="badge-logo"> Proyek Inovasi Akuakultur</div>
+            <h1 class="hero-title">
+                Tambak Udang Lebih<br>
+                <span class="gradient-text">Cerdas & Terkontrol</span>
+            </h1>
+            <p class="hero-subtitle">
+                UdangKu adalah sistem monitoring tambak udang berbasis IoT dan AI yang membantu petambak memantau
+                kualitas air secara real-time dan mencegah kegagalan panen.
+            </p>
+            <div class="hero-cta">
+                <a href="#masalah" class="btn btn-primary">
+                    Kenapa UdangKu?
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#cara-kerja" class="btn btn-outline">Cara Kerja</a>
+            </div>
+        </div>
+        <!-- Impact Stats -->
+        <div class="hero-stats">
+            <div class="stat-card">
+                <span class="stat-number" data-target="40">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Risiko kematian udang bisa diturunkan</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+                <span class="stat-label">Monitoring otomatis non-stop</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Parameter kualitas air terpantau</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masalah Section -->
+    <section class="section section-gray" id="masalah">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Masalah</span>
+                <h2 class="section-title">Mengapa Ini <span class="gradient-text">Penting?</span></h2>
+                <p class="section-subtitle">Industri tambak udang Indonesia menghadapi tantangan serius yang merugikan
+                    petambak setiap tahunnya.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💀</div>
+                    <h3>Kematian Massal Udang</h3>
+                    <p>Perubahan kualitas air yang tidak terdeteksi menyebabkan kematian massal udang dalam hitungan
+                        jam, menghancurkan hasil panen satu siklus penuh.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📉</div>
+                    <h3>Kerugian Miliaran Rupiah</h3>
+                    <p>Petambak kehilangan investasi besar karena tidak ada sistem peringatan dini. Satu kali gagal
+                        panen bisa menelan kerugian ratusan juta.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">👁️</div>
+                    <h3>Monitoring Manual</h3>
+                    <p>Sebagian besar petambak masih mengandalkan pengamatan visual dan pengalaman, yang lambat dan
+                        rentan kesalahan, terutama di malam hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solusi Section -->
+    <section class="section" id="solusi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Solusi</span>
+                <h2 class="section-title">Hadir <span class="gradient-text">UdangKu</span></h2>
+                <p class="section-subtitle">Sistem monitoring cerdas yang menjadi mata dan otak tambak Anda — 24 jam
+                    sehari, 7 hari seminggu.</p>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card main-solution">
+                    <div class="solution-icon-big">🦐</div>
+                    <h3>Apa itu UdangKu?</h3>
+                    <p>UdangKu adalah platform monitoring kualitas air tambak udang yang menggunakan sensor IoT untuk
+                        mengumpulkan data secara real-time, dan AI untuk menganalisis serta memberikan peringatan dini
+                        kepada petambak.</p>
+                    <div class="solution-highlights">
+                        <div class="highlight">
+                            <span class="highlight-icon">✅</span>
+                            <span>Sensor mengukur suhu, pH, DO, salinitas, dan kekeruhan</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">✅</span>
+                            <span>Data dikirim otomatis ke cloud setiap detik</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">✅</span>
+                            <span>AI menganalisis pola dan mendeteksi anomali</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-icon">✅</span>
+                            <span>Peringatan langsung dikirim ke HP petambak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja Section -->
+    <section class="section section-gray" id="cara-kerja">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Arsitektur</span>
+                <h2 class="section-title">Cara Kerja <span class="gradient-text">Sistem</span></h2>
+                <p class="section-subtitle">Dari sensor di tambak hingga notifikasi di genggaman tangan Anda.</p>
+            </div>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🔌</div>
+                    <h3>Input Data</h3>
+                    <p>Sensor (Suhu, TDS, pH, DO) dan Webcam mengambil data kondisi tambak secara real-time sebagai
+                        input sistem.</p>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">⚙️</div>
+                    <h3>Mikrokontroler</h3>
+                    <p>Arduino Uno R3 bertugas menerima input dari seluruh sensor kualitas air lalu meneruskan data
+                        tersebut.</p>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🧠</div>
+                    <h3>Pusat Pemrosesan</h3>
+                    <p>Raspberry Pi 4 bertindak sebagai otak utama yang memproses data dari Arduino serta input visual
+                        dari Webcam.</p>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Aplikasi Mobile</h3>
+                    <p>Hasil pemrosesan dan peringatan dikirimkan ke Aplikasi Mobile, memungkinkan petambak memantau
+                        dari mana saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Fitur</span>
+                <h2 class="section-title">Fitur <span class="gradient-text">Unggulan</span></h2>
+                <p class="section-subtitle">Sistem terintegrasi untuk memaksimalkan hasil panen udang Anda.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrap orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3>Monitoring 24/7</h3>
+                    <p>Pantau suhu, pH, DO, dan salinitas langsung dari perangkat Anda kapan saja.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap red">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8" />
+                            <path d="M12 17v4" />
+                            <path d="m7 9 3 3 2-2 5 5" />
+                        </svg>
+                    </div>
+                    <h3>Prediksi AI</h3>
+                    <p>Algoritma machine learning memprediksi laju pertumbuhan dan risiko kematian.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3>Early Warning</h3>
+                    <p>Peringatan dini otomatis saat kualitas air menyimpang dari ambang batas aman.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3>Keamanan Data</h3>
+                    <p>Data tambak Anda terenkripsi dan aman tersimpan di cloud.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="M7 16l4-8 4 4 4-6" />
+                        </svg>
+                    </div>
+                    <h3>Laporan Detail</h3>
+                    <p>Unduh laporan mingguan dan bulanan dengan analisis mendalam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap pink">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>AI Chatbot</h3>
+                    <p>Tanya langsung ke AI tentang kondisi tambak dan dapatkan rekomendasi instan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section section-gray" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tech Stack</span>
+                <h2 class="section-title">Teknologi <span class="gradient-text">Kami</span></h2>
+                <p class="section-subtitle">Kombinasi teknologi modern untuk performa dan skalabilitas terbaik.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>🖥️ Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">⚛️ Next.js</div>
+                        <div class="tech-item">🎨 Tailwind CSS</div>
+                        <div class="tech-item">📊 Chart.js</div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>⚙️ Backend & IoT</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">🟢 Node.js</div>
+                        <div class="tech-item">🔌 Arduino Uno</div>
+                        <div class="tech-item">🍓 Raspberry Pi 4</div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>🧠 AI & Data</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">🌐 Google Gemini</div>
+                        <div class="tech-item">🐍 Python</div>
+                        <div class="tech-item">🗄️ Firebase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tim</span>
+                <h2 class="section-title">Tim <span class="gradient-text">Kami</span></h2>
+                <p class="section-subtitle">Tim yang berdedikasi untuk membawa inovasi ke industri akuakultur Indonesia.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">👤</div>
+                    <h3>Atha Rizky Rabbani</h3>
+                    <span class="team-role">Ketua Tim</span>
+                    <p>Bertanggung jawab atas Hardware & IoT.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">👤</div>
+                    <h3>Lalu Ahmad Arkani</h3>
+                    <span class="team-role">Anggota Tim</span>
+                    <p>Bertanggung jawab atas Aplikasi & AI.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">👤</div>
+                    <h3>Muhammad Anhar Solihin</h3>
+                    <span class="team-role">Pelatih</span>
+                    <p>Membimbing dan mengarahkan strategi teknis proyek secara mendalam.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">👤</div>
+                    <h3>Verweny Rocchy Maryati</h3>
+                    <span class="team-role">Pembina</span>
+                    <p>Memberikan dukungan arahan, moral, dan dukungan keseluruhan penelitian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-cta" id="contact">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Tertarik dengan <span class="gradient-text">UdangKu</span>?</h2>
+                <p>Hubungi kami untuk kolaborasi, demo, atau informasi lebih lanjut tentang proyek ini.</p>
+                <div class="cta-contacts">
+                    <div class="cta-item">📧 timrobotikamanda@gmail.com</div>
+                    <div class="cta-item">📍 Nusa Tenggara Barat</div>
+                    <div class="cta-item">🏫 MAN 2 MATARAM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="UdangKu Logo" class="logo-img">
+                    <span class="logo-text">UdangKu</span>
+                </div>
+                <p class="footer-copy">&copy; 2026 UdangKu. Sistem monitoring tambak udang cerdas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
