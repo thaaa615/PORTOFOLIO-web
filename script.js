@@ -108,18 +108,22 @@ function addTiltEffect(cards) {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      const rotateX = (y - rect.height / 2) / rect.height * -4;
-      const rotateY = (x - rect.width / 2) / rect.width * 4;
-      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      const rotateX = (y - rect.height / 2) / rect.height * -12;
+      const rotateY = (x - rect.width / 2) / rect.width * 12;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px) scale(1.03)`;
+      card.style.zIndex = '10';
+      card.style.boxShadow = '0 25px 50px rgba(255,107,53,0.15)';
     });
     card.addEventListener('mouseleave', () => {
       card.style.transform = '';
-      card.style.transition = 'transform 0.5s ease';
+      card.style.zIndex = '1';
+      card.style.boxShadow = '';
+      card.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
       setTimeout(() => { card.style.transition = ''; }, 500);
     });
   });
 }
-addTiltEffect(document.querySelectorAll('.feature-card, .problem-card, .tech-card, .flow-step'));
+addTiltEffect(document.querySelectorAll('.feature-card, .problem-card, .tech-card, .flow-step, .team-card'));
 
 // ========== MAGNETIC BUTTON ==========
 document.querySelectorAll('.btn-primary').forEach(btn => {
